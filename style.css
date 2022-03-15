@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+nav{
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(82, 82, 195);
+    align-items: center;
+}
+
+#textoCima{
+    width: 50%;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+    padding: 2rem;
+}
+
+#adicionarLista{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    
+}
+#campoAdicionar{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    outline: none;
+    
+}
+#botaoAdicionar{
+    max-width: 30%;
+    min-width: 20%;
+    display: flex;
+    background-color: gray;
+    font-size: 1.5rem;
+    justify-content: center;
+    padding: 1rem;
+}
+#botaoAdicionar:hover{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: solid 2px rgb(243, 240, 240);
+
+}
+
+#tasks{
+    margin: 0.5rem;
+}
+
+ul{
+    list-style: none;
+}
+ul li{
+    cursor:pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+}
+ul li:nth-child(odd){
+    background: #f9f9f9;
+}
+ul li:hover{
+    background: #ddd;
+}
+
+ul li.checked{
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    content: "";
+    position: absolute;
+    border: #fff solid;
+    top: 10px;
+    left: 16px;
+    height: 15px;
+    width: 7px;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+.close:hover{
+    background-color: #000000;
+    color: white;
+}
